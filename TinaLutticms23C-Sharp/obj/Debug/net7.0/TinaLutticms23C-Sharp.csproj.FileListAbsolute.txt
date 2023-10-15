@@ -1,0 +1,17 @@
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\TinaLutticms23C-Sharp.csproj.AssemblyReference.cache
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\TinaLutticms23C-Sharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\TinaLutticms23C-Sharp.AssemblyInfoInputs.cache
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\TinaLutticms23C-Sharp.AssemblyInfo.cs
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\TinaLutticms23C-Sharp.csproj.CoreCompileInputs.cache
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\bin\Debug\net7.0\TinaLutticms23C-Sharp.exe
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\bin\Debug\net7.0\TinaLutticms23C-Sharp.deps.json
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\bin\Debug\net7.0\TinaLutticms23C-Sharp.runtimeconfig.json
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\bin\Debug\net7.0\TinaLutticms23C-Sharp.dll
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\bin\Debug\net7.0\TinaLutticms23C-Sharp.pdb
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\TinaLutticms23C-Sharp.csproj.CopyComplete
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\TinaLutticms23C-Sharp.dll
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\refint\TinaLutticms23C-Sharp.dll
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\TinaLutticms23C-Sharp.pdb
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\TinaLutticms23C-Sharp.genruntimeconfig.cache
+C:\Exam\TinaLuttiCms23C-Sharp\TinaLutticms23C-Sharp\TinaLutticms23C-Sharp\obj\Debug\net7.0\ref\TinaLutticms23C-Sharp.dll

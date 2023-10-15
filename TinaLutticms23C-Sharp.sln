@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinaLutticms23C-Sharp", "TinaLutticms23C-Sharp\TinaLutticms23C-Sharp.csproj", "{9D1DF333-21AC-4A44-B92B-E2ACE8C3C1DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactServiceTest", "ContactServiceTest\ContactServiceTest.csproj", "{88E0434F-7564-4EC4-881F-E2B1E49FDC3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D1DF333-21AC-4A44-B92B-E2ACE8C3C1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D1DF333-21AC-4A44-B92B-E2ACE8C3C1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D1DF333-21AC-4A44-B92B-E2ACE8C3C1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D1DF333-21AC-4A44-B92B-E2ACE8C3C1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E0434F-7564-4EC4-881F-E2B1E49FDC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E0434F-7564-4EC4-881F-E2B1E49FDC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E0434F-7564-4EC4-881F-E2B1E49FDC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E0434F-7564-4EC4-881F-E2B1E49FDC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDB3FC02-920D-44F9-89BB-972B7BFB690C}
+	EndGlobalSection
+EndGlobal
