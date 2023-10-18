@@ -13,10 +13,11 @@ public class MenuService : IMenuService
         while (true) //  loop för att hålla programmet igång
         {
             Console.Clear();
+            Console.WriteLine(".............................");
             Console.WriteLine("Kontakter:");
-            Console.WriteLine("...............");
+            Console.WriteLine(".............................");
             Console.WriteLine();
-            Console.WriteLine("Välj något av alternativen");
+            Console.WriteLine("-Välj något av alternativen-");
             Console.WriteLine();
             Console.WriteLine("1. Lägg till en kontakt");
             Console.WriteLine("2. Se alla kontakter");

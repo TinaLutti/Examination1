@@ -10,7 +10,7 @@ namespace TinaLutticms23C_Sharp.Services;
 public class ContactService : IContactService
 {
     private List<Contact> _contactList = new List<Contact>(); // en privat lista som lagrar kontakter
-    private List<IContact> iContactList = new List<IContact>();// ej tillgänligt utanför klassen 
+    
 
     public ContactService()
     {
@@ -19,7 +19,8 @@ public class ContactService : IContactService
 
     public Contact AddContact(Contact contact) //lägg till kontakt
     {
-        if (_contactList == null) // Om listan inte finns, skapa en ny lista
+        // Om listan inte finns, skapa en ny lista
+        if (_contactList == null) 
         {
             _contactList = new List<Contact>(); // insatnsierar och lägger till en kontakt i listan
         }
@@ -30,8 +31,10 @@ public class ContactService : IContactService
         return contact; //returnerar kontakten
     }
 
+
     public void DeleteContact(string email) //tar bort kontakt genom mailadress
     {
+
         if (_contactList == null)
         {
             _contactList = new List<Contact>();
@@ -48,33 +51,54 @@ public class ContactService : IContactService
 
     public IEnumerable<Contact> GetAllContacts()
     {
-        if (_contactList == null)
+        try
         {
-            _contactList = new List<Contact>();
-        }
-
-        var file = FileService.ReadFromFile(); //läser från listan
-        if (!string.IsNullOrEmpty(file))
-        {
-            var deserializedContacts = JsonConvert.DeserializeObject<List<Contact>>(file);
-            if (deserializedContacts != null)
+            if (_contactList == null)
             {
-                _contactList = deserializedContacts; //uppdaterar listan
+                _contactList = new List<Contact>();
             }
-        }
 
-        return _contactList.OrderBy(contact => contact.FirstName); //ger tillbaka listan sorterad på förnamn
+            var file = FileService.ReadFromFile(); //läser från listan
+            if (!string.IsNullOrEmpty(file))
+            {
+                var deserializedContacts = JsonConvert.DeserializeObject<List<Contact>>(file);
+                if (deserializedContacts != null)
+                {
+                    _contactList = deserializedContacts; //uppdaterar listan
+                }
+            }
+
+            return _contactList.OrderBy(contact => contact.FirstName); //ger tillbaka listan sorterad på förnamn
+        }
+        catch (Exception ex)
+        {
+            // fånga och hantera undantaget här
+            Console.WriteLine("Ett fel uppstod: " + ex.Message);
+            return null!; // Returnera null om något går fel
+        }
     }
 
-    public Contact GetOneContact(string email)  //för att hämta ut en kontakt via mailadress
+        public Contact GetOneContact(string email)  // för att hämta ut en kontakt via mailadress
     {
-        if (_contactList == null)
-        {
-            _contactList = new List<Contact>();
+        try
+        {   //om _contactList är null
+            if (_contactList == null)
+            {
+                //skapas en ny lista Contact
+                _contactList = new List<Contact>();
+            }
+            // hämtar ut från listan via email, om ingen mail matchar skickas null
+            var contact = _contactList?.FirstOrDefault(x => x.Email == email); 
+            
+            //gjort try catch för att slippa varningen "may be null" men löstes ej
+            return contact; // skickar tillbaka kontakten; om ej kontakten hittas, returneras null.
         }
-
-        var contact = _contactList.FirstOrDefault(x => x.Email == email); //hämtar ut fr listan via email
-        return contact; //skickar tillbaka kontakten
+        catch (Exception ex)
+        {
+            // fånga och hantera undantaget här
+            Console.WriteLine("Ett fel uppstod: " + ex.Message);
+            return null!; // Returnera null om något går fel
+        }
     }
 
     public List<Contact> GetFile()
@@ -85,8 +109,8 @@ public class ContactService : IContactService
             return new List<Contact>();
         }
 
-        var deserializedContacts = JsonConvert.DeserializeObject<List<Contact>>(file); //konverterar json till kontaktlista
-        return deserializedContacts ?? new List<Contact>(); //skickar tom lista om ej fungerar
+        var deserializedContacts = JsonConvert.DeserializeObject<List<Contact>>(file); //konverterar json till kontaktlista GÖR EN TRY CATCH!
+        return deserializedContacts ?? new List<Contact>(); //skickar tom lista om ej fungerar. ??=annars
     }
 
 }
